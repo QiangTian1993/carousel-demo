@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner {
+            width: 400px;
+            height: 225px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        #banner img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            transition: all 1s;
+        }
+
+        .start {
+            left: 100%;
+        }
+
+        .center {
+            left: 0;
+            z-index: 1;
+        }
+
+        .move {
+            transform: translateX(-100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner"></div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
